@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	<meta charset="UTF-8"/>
+	<title>SBEC</title>
+	<link th:href="@{/css/index.css}" rel="stylesheet" type="text/css">
+	</head>
+
+
+	<body>
+	<header class ="header-container">
+		<div class ="logo">
+			<h1><a th:href="@{/}">SBEC</a></h1>
+		</div>
+		<nav class ="navbar-right">
+			<ul class ="nav-ul">
+				<li class ="nav-li"><a th:href="@{/about}">ABOUT</a></li>
+				<li class ="nav-li"><a th:href="@{/login}">Sign In</a></li>
+				<li class ="nav-li">Sign Up</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1>ログイン成功</h1>
+	</main>
+
+	<footer>
+		<p>Copyright © 2022 SB2022 All Rights Reserved.</p>
+	</footer>
+
+	</body>
+</html>

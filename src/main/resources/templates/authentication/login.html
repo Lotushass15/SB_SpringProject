@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	<meta charset="UTF-8"/>
+	<title>SBEC</title>
+	<link th:href="@{/css/index.css}" rel="stylesheet" type="text/css">
+	<link th:href="@{/css/login.css}" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+	<header th:include="template1 :: frag_header" class ="header-container" ></header>
+
+	<main>
+		<div class ="form-container">
+			<h1>Sign In Form</h1>
+			<form action ="/SB_SpringProject/login" method ="POST">
+				<div class ="form-group">
+					<label>ユーザーID</label>
+					<input type="number" name="userId" />
+				</div>
+				<div class ="form-group">
+					<label>パスワード</label>
+					<input type="password" name="password" />
+				</div>
+				<input type ="submit" value="Sign In">
+			</form>
+		</div>
+	</main>
+
+	<footer th:include="template1 :: frag_footer"></footer>
+
+	</body>
+</html>

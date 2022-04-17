@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	<meta charset="UTF-8"/>
+	<title>SBEC</title>
+	<link th:href="@{/css/index.css}" rel="stylesheet" type="text/css">
+	</head>
+
+
+	<body>
+	<header th:include="template1 :: frag_header" class ="header-container"></header>
+
+	<main>
+		<div class ="article-container">
+			<h1 class="article-title">2022SB_SpringProjectの開発</h1>
+		</div>
+	</main>
+
+	<footer th:include="template1 :: frag_footer"></footer>
+	</body>
+</html>

@@ -12,7 +12,7 @@ public class Login {
 		return "authentication/login";
 	}
 
-	@PostMapping("login")
+	@PostMapping("Login")
 	public String loginCheck(int userId, String password) {
 		if (userId == 123 && password.equals("abc")) {
 			return "authentication/success";
